@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Description</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="question">
+        <h3>What does main.hbs used for?</h3>
+        <p>
+           The main.hbs file is a crucial component of our website's templating system. It acts as the main template that sets the foundation for the overall structure and design elements that will be present across all pages of the website.
+
+            In the main.hbs file, we typically define the following components:
+        <ul>
+            <li>
+                <strong>Header:</strong> This component represents the top section of the website and usually contains the website logo, branding elements, and any important navigation links or search functionality.
+            </li>
+            <li>
+                <strong>Navigation Menu:</strong>This component includes the menu or navigation bar that allows users to navigate between different pages or sections of the website. It provides links to various pages, such as the home page, about page, contact page, and other relevant sections.
+            </li>
+
+            <li>
+                <strong>Footer:</strong>The footer component is located at the bottom of each page and often contains additional navigation links, copyright information, social media icons, and other relevant content.
+            </li>
+
+        </ul>
+            By using the main.hbs layout as the foundation for all pages, we ensure consistency in terms of the overall look and feel of the website. This approach simplifies the development process and allows for easy maintenance and updates across multiple pages. Any changes made to the main.hbs file will automatically reflect on all pages that utilize it as their layout template.
+
+            Overall, the main.hbs file plays a crucial role in providing a unified and consistent user experience throughout the website by defining the common structural and design elements shared across all pages.
+        </p>
+    </div>
+
+    <div class="question">
+        <h3>Explanation of the input elements in the addEmployee.html</h3>
+        <p>
+            The addEmployee.html file contains a form for adding new employees. The form includes various input elements
+            to collect information about the employee. Here's a brief explanation of each input element:
+        </p>
+        <ul>
+            <li>
+                <strong>First Name:</strong> Allows users to enter the first name of the employee.
+            </li>
+            <li>
+                <strong>Last Name:</strong> Let the user to input the last name of the employee.
+            </li>
+            <li>
+                <strong>Email:</strong> Let the user to provide the email address of the employee.
+            </li>
+            <li>
+                <strong>Address:</strong> Allows users to enter the address of the employee.
+            </li>
+            <li>
+                <strong>Enrollment Status:</strong> Lets users select the employment status of the employee (e.g., full-time,
+                part-time, contract).
+            </li>
+            <li>
+                <strong>Course ID:</strong> Allows users to specify the course ID associated with the employee.
+            </li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h3>Describing the information that is sent back to the form from the checkLastName() function and provide an explanation for the reason behind it.</h3>
+        <p>
+            The checkLastName() function is responsible for validating the last name input field in the addEmployee.html
+            form. It performs the following actions:
+        </p>
+        <ul>
+            <li>
+                If the user inserts any non-alphabetic characters (characters other than letters) in the last name
+                field, the function triggers an alert with an appropriate error message. It sets the focus back to the
+                last name input box to draw the user's attention to the error. Finally, it returns false to indicate
+                that there is an error in the form submission.
+            </li>
+            <li>
+                If the user inserts only alphabetic characters in the last name field, the function does not trigger any
+                alerts. It simply returns true, indicating that the form submission is valid and can proceed.
+            </li>
+        </ul>
+        <p>
+            This validation is important to ensure that the last name field contains only valid alphabetic characters.
+            By returning false in case of an error, we prevent the form from being submitted and prompt the user to
+            correct their input. Conversely, returning true allows the form to be submitted when the last name field
+            contains valid data.
+        </p>
+    </div>
+</body>
+
+</html>

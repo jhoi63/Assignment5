@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WEB700 Assignment 5 Summary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<span class="navbar-toggler-icon"></span>
+
+		<div class="navbar-nav mr-auto">
+			<a class="nav-link" href="/employees">Display Employees</a>
+			<a class="nav-link" href="/description">Description</a>
+			<a class="nav-link active" href="/employees/add">Add Employee</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<main class="col-md-12">
+				<h2>WEB700 Assignment 5</h2>
+				<hr>
+
+				<h3>Student Information</h3>
+				<p>Hello! My Name is <bold>Aaron Kim Pahang</bold>, with Student ID: 152101226. I'm student taking up
+					this WEB 700 Course under the Business Information Technology at Seneca Polytechnic. This assignment
+					will showcase my ability and understanding in developing a website using handlebars to render JSON
+					data data with .hbs views and layouts. This also would display knowledge in using
+					Forms to add employees with Web Form. I am using a custom CSS stylesheet to enhance my knowledge in
+					designing my own site with my own style preference same with my previous assignment.
+
+				</p>
+
+				<h3>Objective</h3>
+				<p>Build upon the code created in Assignment 3 by incorporating the Handlebars view engine to render
+					JSON data visually in the browser using .hbs views and layouts. Additionally, update the officeData
+					and server.js modules to allow for viewing and adding employees individually using a web form.</p>
+
+				<h3>Specification</h3>
+				<h4>Part 1: Getting Express Handlebars & Updating Views</h4>
+				<ul>
+					<li>Install and configure the "express-handlebars" module</li>
+					<li>Create a "layouts" folder inside the "views" folder</li>
+					<li>Create a "main.hbs" file inside the "layouts" folder</li>
+				</ul>
+
+				<h4>Part 2: Updating the Employees Route & Adding a View</h4>
+				<ul>
+					<li>Create an "employees.hbs" file inside the "views" folder</li>
+					<li>Update the GET "/employees" route to render employee data using res.render()</li>
+					<li>Build the employees table in the "employees.hbs" file</li>
+				</ul>
+
+				<h4>Part 3: Adding a View and Route to Support Adding Employees</h4>
+				<ul>
+					<li>Create an "addEmployee.html" file inside the "views" folder</li>
+					<li>Add the GET "/employees/add" route in server.js</li>
+					<li>Add the POST "/employees/add" route in server.js</li>
+					<li>Create the "addEmployee" function in officeData.js</li>
+				</ul>
+
+				<h4>Part 4: Adding Description View & Updating server.js</h4>
+				<ul>
+					<li>Create a "description.hbs" file inside the "views" folder</li>
+					<li>Add content to explain the code in "main.hbs" and the input elements in "addEmployee.html"</li>
+					<li>Update the GET "/description" route in server.js</li>
+				</ul>
+
+				<h4>Part 5: Publishing your site (optional)</h4>
+				<p>Publish your site online once it has been tested locally and verified. </br> 
+					This assignment is published at: <a href="https://crazy-mite-scarf.cyclic.app/">https://crazy-mite-scarf.cyclic.app/</a></p>
+
+			</main>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-content">
+
+			<p>&copy; 2024 Aaron Kim Pahang. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
