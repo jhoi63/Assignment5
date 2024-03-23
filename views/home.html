@@ -10,67 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="/css/theme.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar {
-            background-color: #f8f9fa;
-        }
-
-        .navbar-nav .nav-link {
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        .navbar-nav .nav-link.active {
-            color: #000;
-        }
-
-        main h2 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-
-        main h3 {
-            color: #007bff;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-
-        main p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        main h4 {
-            color: #007bff;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        main ul {
-            list-style-type: square;
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        main li {
-            margin-bottom: 10px;
-        }
+        /* Your custom styles */
     </style>
 </head>
 
@@ -86,56 +26,36 @@
     </nav>
     <div class="container">
         <main>
-            <h2>WEB700 Assignment 5</h2>
+            <h3>Student Information</h3>
+            <p>Hello! My name is Luzaline Joy Tirona, and I am the author of this website. I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites that provide a great user experience.</p>
+            <p>This website serves as a portfolio of my work and showcases my skills and projects. Feel free to explore the various pages and see the different projects I have worked on.</p>
+            <p>Publish your site online once it has been tested locally and verified. My Assignment 5 published at: <a href="https://dull-gold-sturgeon-gear.cyclic.app">https://dull-gold-sturgeon-gear.cyclic.app</a></p>
+            
+            <h2>WEB700 Course at Seneca College</h2>
             <hr>
 
-            <h3>Student Information</h3>
-            <p>
-                Hello! My name is Luzaline Joy Tirona, and I am the author of this website. I am a passionate web
-                developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and
-                functional websites that provide a great user experience.
-            </p>
-            <p>
-                This website serves as a portfolio of my work and showcases my skills and projects. Feel free
-                to explore the various pages and see the different projects I have worked on.
-            </p>
+            <p>The WEB700 course at Seneca College is a comprehensive program covering various aspects of web development. Let's break down the course themes by week:</p>
 
-            <h3>Objective</h3>
-            <p>Enhance the code created in Assignment 3 by integrating the Handlebars view engine to visually render
-                JSON data in the browser using .hbs views and layouts. Also, update the officeData
-                and server.js modules to allow for individual viewing and addition of employees through a web form.</p>
+            <h3>Course Themes by Week</h3>
+            <ol>
+                <li><strong>Week 1:</strong> Course Introduction and Internet Architecture</li>
+                <li><strong>Week 2:</strong> JavaScript Fundamentals</li>
+                <li><strong>Week 3:</strong> Object-Oriented JavaScript and ES6 Features</li>
+                <li><strong>Week 4:</strong> Introduction to Node.js</li>
+                <li><strong>Week 5:</strong> Express.js Introduction and Deployment</li>
+                <li><strong>Week 6:</strong> HTML5 Introduction</li>
+                <li><strong>Week 7:</strong> CSS Introduction</li>
+                <li><strong>Week 8:</strong> Forms Introduction and Processing Forms with Express.js</li>
+                <li><strong>Week 9:</strong> Template Engines - Handlebars.js</li>
+                <li><strong>Week 10:</strong> Introduction to AJAX and REST API</li>
+                <li><strong>Week 11:</strong> Introduction to Postgres and Sequelize ORM</li>
+                <li><strong>Week 12:</strong> Security Considerations</li>
+            </ol>
+        </main>
+    </div>
+</body>
 
-            <h3>Specification</h3>
-            <h4>Part 1: Getting Express Handlebars & Updating Views</h4>
-            <ul>
-                <li>Install and configure the "express-handlebars" module</li>
-                <li>Create a "layouts" folder inside the "views" folder</li>
-                <li>Create a "main.hbs" file inside the "layouts" folder</li>
-            </ul>
+</html>
 
-            <h4>Part 2: Updating the Employees Route & Adding a View</h4>
-            <ul>
-                <li>Create an "employees.hbs" file inside the "views" folder</li>
-                <li>Update the GET "/employees" route to render employee data using res.render()</li>
-                <li>Build the employees table in the "employees.hbs" file</li>
-            </ul>
-
-            <h4>Part 3: Adding a View and Route to Support Adding Employees</h4>
-			<ul>
-				<li>Create an "addEmployee.html" file inside the "views" folder</li>
-				<li>Add the GET "/employees/add" route in server.js</li>
-				<li>Add the POST "/employees/add" route in server.js</li>
-				<li>Create the "addEmployee" function in officeData.js</li>
-			</ul>
-					
-			<h4>Part 4: Adding Description View & Updating server.js</h4>
-			<ul>
-				<li>Create a "description.hbs" file inside the "views" folder</li>
-				<li>Add content to explain the code in "main.hbs" and the input elements in "addEmployee.html"</li>
-				<li>Update the GET "/description" route in server.js</li>
-			</ul>
-					
-			<h4>Part 5: Publishing your site (optional)</h4>
-            <p>Publish your site online once it has been tested locally and verified. My Assignment 5 published at: <a href="https://dull-gold-sturgeon-gear.cyclic.app">https://dull-gold-sturgeon-gear.cyclic.app</a></p>
 
 					
