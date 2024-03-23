@@ -9,7 +9,7 @@
         /* Your custom styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f2f2f2;
             color: #333;
             margin: 0;
             padding: 0;
@@ -26,20 +26,24 @@
 
         .question {
             margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
         }
 
         .question h3 {
-            color: #007bff;
+            color: #333;
+            font-size: 24px;
             margin-bottom: 15px;
         }
 
         .question p {
             line-height: 1.6;
             margin-bottom: 15px;
+            text-align: justify;
         }
 
         .question ul {
-            list-style-type: square;
+            list-style-type: disc;
             padding-left: 20px;
             margin-bottom: 15px;
         }
@@ -52,7 +56,7 @@
             text-align: center;
             margin-top: 30px;
             padding: 10px 0;
-            background-color: #007bff;
+            background-color: #333;
             color: #fff;
         }
 
@@ -68,54 +72,69 @@
     <div class="container">
 
         <div class="question">
-            <h3>Explain the code in the main.hbs</h3>
+            <h3>I. Explain the code in the main.hbs</h3>
             <p>
-                The main.hbs file serves as the core template for our website's layout. It defines the structural elements that are consistent across all pages. These include:
+                The main.hbs file is a handlebars template that defines the layout for our website. It consists of several sections:
             </p>
-            <ul>
-                <li><strong>Header:</strong> Contains the website logo, branding, and navigation.</li>
-                <li><strong>Navigation Menu:</strong> Provides links to different sections of the website.</li>
-                <li><strong>Footer:</strong> Displays copyright information and additional links.</li>
-            </ul>
             <p>
-                By using main.hbs as the base template, we ensure a cohesive design and simplify maintenance.
+                The <strong>Header</strong> contains the website logo and navigation menu. It helps users identify the website and provides easy access to various pages.
+            </p>
+            <p>
+                The <strong>Content</strong> section represents the main content of each page. It differs from page to page and displays specific information or functionality.
+            </p>
+            <p>
+                The <strong>Footer</strong> is located at the bottom of each page. It typically contains copyright information, additional links, and contact details.
+            </p>
+            <p>
+                By using the main.hbs template, we ensure consistency across different pages of the website.
             </p>
         </div>
 
         <div class="question">
-            <h3>Explanation of Input Elements in addEmployee.html</h3>
+            <h3>II. Explanation of Input Elements in addEmployee.html</h3>
             <p>
-                The addEmployee.html file features a form for capturing employee information. Here's a breakdown of the input elements:
+                The addEmployee.html file contains a form for adding employee information. It includes the following input elements:
             </p>
-            <ul>
-                <li><strong>First Name:</strong> Text input field for the employee's first name.</li>
-                <li><strong>Last Name:</strong> Text input field for the employee's last name.</li>
-                <li><strong>Email:</strong> Text input field for the employee's email address.</li>
-                <li><strong>Address:</strong> Text input field for the employee's address.</li>
-                <li><strong>Enrollment Status:</strong> Dropdown menu for selecting the employee's status.</li>
-                <li><strong>Course ID:</strong> Text input field for specifying the employee's course ID.</li>
-            </ul>
+            <p>
+                The <strong>First Name</strong> input field allows users to enter the employee's first name.
+            </p>
+            <p>
+                The <strong>Last Name</strong> input field allows users to enter the employee's last name.
+            </p>
+            <p>
+                The <strong>Email</strong> input field allows users to enter the employee's email address.
+            </p>
+            <p>
+                The <strong>Address</strong> input field allows users to enter the employee's address.
+            </p>
+            <p>
+                The <strong>Enrollment Status</strong> dropdown menu enables users to select the employee's enrollment status from a list of options.
+            </p>
+            <p>
+                The <strong>Course ID</strong> input field allows users to enter the employee's course ID.
+            </p>
         </div>
 
         <div class="question">
-            <h3>Return Value from checkLastName() Function</h3>
+            <h3>III. Return Value from checkLastName() Function</h3>
             <p>
-                The checkLastName() function validates the last name input in addEmployee.html. It returns:
+                The checkLastName() function is responsible for validating the last name input in addEmployee.html. It returns a boolean value:
             </p>
-            <ul>
-                <li><strong>False:</strong> If the last name contains non-alphabetic characters, triggering an error alert.</li>
-                <li><strong>True:</strong> If the last name consists only of alphabetic characters, allowing form submission.</li>
-            </ul>
             <p>
-                This validation ensures that the last name field contains valid data before submission.
+                If the last name contains non-alphabetic characters, the function returns <strong>False</strong> and triggers an error alert.
+            </p>
+            <p>
+                If the last name consists only of alphabetic characters, the function returns <strong>True</strong>, allowing the form submission to proceed.
+            </p>
+            <p>
+                This validation ensures that the last name field contains valid data before proceeding.
             </p>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2023~2025. All rights reserved. <a href="mailto:ltirona@myseneca.ca">ltirona@myseneca.ca</a>
-        </p>
+        <p>&copy; 2023~2025.All rights reserved. <a href="mailto:ltirona@myseneca.ca">ltirona@myseneca.ca</a></p>
     </footer>
 
 </body>
